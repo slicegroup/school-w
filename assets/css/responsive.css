@@ -1,0 +1,42 @@
+@media (min-width: 0px) and (max-width: 767px) {
+  /* banner */
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .button {
+    padding: 12px 30px;
+  }
+  .upload .mask {
+    top: 69px;
+  }
+  #categories {
+    padding-top: 0px;
+}
+  footer {
+    height: auto;
+  }
+
+  footer .info {
+    font-size: 0.8rem;
+    margin: 0 0 12px;
+    justify-content: start;
+    display: flex;
+  }
+
+
+  .slick-prev, .slick-next {
+    display: none!important;
+  }
+}
+
+/* 768-577 tablet */
+
+/* @media (min-width: 576px) {
+ 
+ } */
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

@@ -9,6 +9,27 @@ $('.slider').slick({
   infinite: true,
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
   // touchThreshold: 100
+ 
+});
+
+// slider productos
+
+$('.category').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  
+});
+
+// slider popular product
+$('.product-popular').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  // dots: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -37,25 +58,6 @@ $('.slider').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
-});
-
-// slider productos
-
-$('.category').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-});
-
-// slider popular product
-$('.product-popular').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: true,
-  // dots: true,
 });
 
 
