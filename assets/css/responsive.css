@@ -1,32 +1,56 @@
 @media (min-width: 0px) and (max-width: 767px) {
-  /* banner */
-  .banner h1 {
-    font-size: 2rem;
+
+    /* banner */
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .button {
+        padding: 12px 30px;
+    }
+    .upload .mask {
+        top: 69px;
+    }
+
+    .hamburger {
+        opacity: 1;
+        margin-top: -5px;
+    }
+    .navbar-light .navbar-toggler,
+    .icon-nav {
+        display: none!important;
+    }
+    .nav-main .logo {
+      text-align: start;
+    }
+    #categories {
+        padding-top: 0px;
+    }
+    .banner .img {
+      margin-top: 80px;
+    }
+    .nav-main .firt-nav {
+      border-bottom: none;
   }
-  .button {
-    padding: 12px 30px;
-  }
-  .upload .mask {
-    top: 69px;
-  }
-  #categories {
-    padding-top: 0px;
-}
-  footer {
-    height: auto;
+  .banner .mask {
+    top: 80px;
   }
 
-  footer .info {
-    font-size: 0.8rem;
-    margin: 0 0 12px;
-    justify-content: start;
-    display: flex;
-  }
+    footer {
+        height: auto;
+    }
+
+    footer .info {
+        font-size: 0.8rem;
+        margin: 0 0 12px;
+        justify-content: start;
+        display: flex;
+    }
 
 
-  .slick-prev, .slick-next {
-    display: none!important;
-  }
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
 }
 
 /* 768-577 tablet */
@@ -35,8 +59,18 @@
  
  } */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
 
-@media (min-width: 992px) {}
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .school-card h3{
+    font-size: 1rem;
+  }
+
+}
 
 @media (min-width: 1200px) {}

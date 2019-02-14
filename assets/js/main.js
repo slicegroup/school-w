@@ -17,8 +17,9 @@ $('.slider').slick({
 $('.category').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
+
   
 });
 
@@ -26,16 +27,16 @@ $('.category').slick({
 $('.product-popular').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   arrows: true,
-  // dots: true,
+   dots: true,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -91,11 +92,18 @@ $(".bajar").click(function (event) {
   }
 })
 
-
+// menu
+var $burguer = document.getElementById('burguer');
+var $menu = document.getElementById('menu_xs');
+var $squeeze = document.getElementById('squeeze');
+// var $hamburger = document.querySelectorAll(".hamburger");
+function toggleMenu(){
+    $menu.classList.toggle('active');
+    $squeeze.classList.toggle('is-active');
+};
+$burguer.addEventListener('click',toggleMenu);
 
 // buscador
-// Quick proof of concept
-// Would like to make CSS only
 
 var searchWrapper = document.querySelector('.search-wrapper'),
 searchInput = document.querySelector('.search-input');
@@ -107,5 +115,16 @@ document.addEventListener('click', function (e) {
   } else {
     searchWrapper.classList.remove('focused');
   }
+});
+
+
+// carrito check
+
+$('.buy').click(function(){
+  $('.bottom').addClass("clicked");
+});
+
+$('.remove').click(function(){
+  $('.bottom').removeClass("clicked");
 });
 
