@@ -24,6 +24,12 @@ a:hover {
     color: #f5f710;
     text-decoration: underline;
 }
+a:focus {
+    outline: none;
+}
+.card-product a:focus{
+    border: 2px solid #48a24c!important;
+}
 
 section {
     margin-bottom: 100px;
@@ -231,6 +237,7 @@ footer img{
     font-size: 30px;
     color: #b1adad;
 }
+
 
 .product .product-popular .slick-prev {
     left: -50px;
@@ -685,7 +692,7 @@ font-size: 0.8rem;
 }
 
 .upload .mask {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.38);
     position: absolute;
     left: 0;
     right: 0;
