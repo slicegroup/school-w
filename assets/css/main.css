@@ -121,7 +121,10 @@ footer img{
     text-align: center;
     /* margin: 10px; */
 }
+.navbar{
 
+    border-top: 1px solid #c6c6d0;
+}
 .nav-main .option img {
     width: 20px;
 }
@@ -133,7 +136,7 @@ footer img{
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    border-bottom: 1px solid #c6c6d0;
+    /* border-bottom: 1px solid #c6c6d0; */
 }
 
 .nav-main .content-nav {
@@ -378,6 +381,7 @@ font-size: 0.8rem;
    position: relative;
    float: left;
  }
+
  /* .wrapper-buy .container .bottom .left .buy {
    float: right;
    width: calc(30% - 2px);
@@ -959,7 +963,9 @@ section#home {
     padding: 0;
     flex: 1;
 }
-
+.content a{
+    color:#000;
+}
 .frame-menu {
     border: 2px dashed white;
     width: 100%;

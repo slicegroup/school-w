@@ -121,10 +121,8 @@ document.addEventListener('click', function (e) {
 // carrito check
 
 $('.buy').click(function(){
-  $('.bottom').addClass("clicked");
+  $(this).closest('.bottom').addClass('clicked');
 });
 
-$('.remove').click(function(){
-  $('.bottom').removeClass("clicked");
-});
+
 
