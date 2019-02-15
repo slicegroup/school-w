@@ -1,0 +1,2 @@
+2019-02-15T15:53:10+00:00 CRITICAL Cannot redeclare apk_register_sidebar() (previously declared in /var/www/html/student/wp-content/themes/Student/functions.php:12) in /var/www/html/student/wp-content/themes/Student/functions.php on line 36
+

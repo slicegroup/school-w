@@ -43,11 +43,11 @@
             </div>
             <div class="content-nav">
                 <div class="logo">
-                 <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
-             </div>
-             &nbsp;
-         </div>
-         <div class="content-nav icon-nav">
+                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+               </div>
+               &nbsp;
+           </div>
+           <div class="content-nav icon-nav">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
         </div>
     </div>
@@ -108,6 +108,6 @@
     </div>
             <!-- <section id="home">
 							<div id="box-main">
-                         </section> -->
-                     </div>
-                 </header>
+                           </section> -->
+                       </div>
+                   </header>
