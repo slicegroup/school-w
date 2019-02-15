@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/school.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/woocomerce-style.css">
 
 
     <?php wp_head(); ?>

@@ -89,7 +89,21 @@ footer img{
     right: 0;
     transition: all 0.5s;
     z-index: 997;
+    box-shadow: 0 4px 2px -2px #0000000d;
 }
+#home{
+    margin-top: 7px;
+}
+/* #header {
+    position: fixed;
+    top: -6px;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    box-shadow: 0 4px 2px -2px #00000026;
+} */
+
+
 
 #header.header-scrolled {
     background: #fff;

@@ -1,0 +1,7 @@
+.woocommerce{
+  margin-top: 200px!important;
+}
+
+.woocommerce table.shop_table {
+  width: 50%!important;
+}

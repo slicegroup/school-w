@@ -1603,3 +1603,13 @@ cURL is not available. Sync aborted. Please contact your host to install cURL.
 ====End Log====
 
 
+02-15-2019 @ 16:53:08 - ====Start Log====
+[WC -> Square] Skipping WC Product 9 since it has no SKUs.
+====End Log====
+
+
+02-15-2019 @ 16:54:22 - ====Start Log====
+[WC -> Square] Skipping WC Product 11 since it has no SKUs.
+====End Log====
+
+
