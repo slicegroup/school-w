@@ -300,3 +300,7 @@ Stack trace:
 
 2019-02-18T18:48:56+00:00 CRITICAL Cannot redeclare get_the_ID() (previously declared in /var/www/html/student/wp-includes/post-template.php:28) in /var/www/html/student/wp-content/themes/Student/functions.php on line 74
 
+2019-02-18T20:15:59+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/student/wp-content/themes/Student/partials/school.php on line 44
+
+2019-02-18T20:16:29+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/student/wp-content/themes/Student/partials/school.php on line 44
+

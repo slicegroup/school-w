@@ -8,9 +8,11 @@
         'orderby' => 'slug',
         'order' => 'ASC'
       );
-      $product_categories = get_terms('product_cat', $args);
-      $count = count($product_categories);
 
+      $product_categories =  get_terms(['taxonomy' => 'product_cat','hide_empty' => false, 'parent' => 0]);
+      $count = count($product_categories);
+      $product_chield =  get_terms(['taxonomy' => 'product_cat','hide_empty' => true, 'chield' => 0]);
+      $countt = count($product_chield);
 
       if ($count > 0) {
         foreach ($product_categories as $product_category) {
@@ -23,16 +25,24 @@
                $images = wp_get_attachment_image_src($thumbnail_id, 'medium');
 
                ?>
+
                <img src="<?php echo $images[0]; ?>" alt="<?php echo $product_category->name; ?>" />
              </div>
              <div class="content">
               <h3><?php echo $product_category->name; ?></h3>
-              <p><a href="#">firts</a></p>
-              <p><a href="#">Second</a></p>
-              <p><a href="#">firts</a></p>
-              <a href="cursos.html">
-                <a href="<?php echo get_term_link( $product_category ) ?>"><p>See all courses</p></a>
-              </a>
+
+              <?php 
+              foreach ($product_chield as $product_chields) {
+                ?>
+                <p><a href="#"><?php echo $product_chields->name; ?></a></p>
+                <?php
+
+                
+              }
+              ?>
+              
+              <a href="<?php echo get_term_link( $product_category ) ?>"><p>See all courses</p></a>
+
             </div>
           </div>
         </div>

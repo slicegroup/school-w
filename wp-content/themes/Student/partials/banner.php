@@ -19,7 +19,7 @@
           <div class="item">
             <div class="mask"></div>
             <div class="img" style="background-image:url(<?php the_field('image_product'); ?>)">
-              <?php var_dump($term->term_id); ?>
+
               
               <div class="text">
                 <h1 class="animated wow fadeInUp"><?php the_field( 'name' ); ?></h1>
