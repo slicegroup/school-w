@@ -1603,6 +1603,7 @@ cURL is not available. Sync aborted. Please contact your host to install cURL.
 ====End Log====
 
 
+<<<<<<< HEAD
 02-15-2019 @ 14:11:53 - ====Start Log====
 cURL is not available. Sync aborted. Please contact your host to install cURL.
 ====End Log====
@@ -8740,6 +8741,15 @@ cURL is not available. Sync aborted. Please contact your host to install cURL.
 
 02-15-2019 @ 20:42:36 - ====Start Log====
 cURL is not available. Sync aborted. Please contact your host to install cURL.
+=======
+02-15-2019 @ 16:53:08 - ====Start Log====
+[WC -> Square] Skipping WC Product 9 since it has no SKUs.
+====End Log====
+
+
+02-15-2019 @ 16:54:22 - ====Start Log====
+[WC -> Square] Skipping WC Product 11 since it has no SKUs.
+>>>>>>> f24bf67e52f28de33153fbd3e78f0895edeef63e
 ====End Log====
 
 

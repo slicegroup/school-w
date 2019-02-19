@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/list.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/product.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/woocomerce-style.css">
 
 
     <?php wp_head(); ?>
