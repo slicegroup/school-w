@@ -3,55 +3,54 @@
     <h2>Online school lists</h2>
     <div class="row">
       <!-- sensual card -->
-      <?php $args = array(
+      
+      <?php $wcatTerms = get_terms('product_cat', array('hide_empty' => 0, 'parent' =>0)); 
+      foreach($wcatTerms as $wcatTerm) : 
+       ?>
 
-        'orderby' => 'slug',
-        'order' => 'ASC'
-      );
 
-      $product_categories =  get_terms(['taxonomy' => 'product_cat','hide_empty' => false, 'parent' => 0]);
-      $count = count($product_categories);
-      $product_chield =  get_terms(['taxonomy' => 'product_cat','hide_empty' => true, 'chield' => 0]);
-      $countt = count($product_chield);
+       <div class="col-md-6 col-xs-12 col-lg-3 animated wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+        <div class="body">
+          <div class="img">
+           <?php $thumbnail_id = get_woocommerce_term_meta($wcatTerm->term_id, 'thumbnail_id', true);
 
-      if ($count > 0) {
-        foreach ($product_categories as $product_category) {
-          ?>
-          <div class="col-md-6 col-xs-12 col-lg-3 animated wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
-            <div class="body">
-              <div class="img">
-               <?php $thumbnail_id = get_woocommerce_term_meta($product_category->term_id, 'thumbnail_id', true);
+           $images = wp_get_attachment_image_src($thumbnail_id, 'medium');
 
-               $images = wp_get_attachment_image_src($thumbnail_id, 'medium');
+           ?>
 
-               ?>
+           <img src="<?php echo $images[0]; ?>" alt="<?php echo $wcatTerm->name; ?>" />
+         </div>
+         <div class="content">
+          <h3><?php echo $wcatTerm->name; ?></h3>
 
-               <img src="<?php echo $images[0]; ?>" alt="<?php echo $product_category->name; ?>" />
-             </div>
-             <div class="content">
-              <h3><?php echo $product_category->name; ?></h3>
+          <?php
+          $wsubargs = array(
+           'hierarchical' => 1,
+           'show_option_none' => '',
+           'hide_empty' => 0,
+           'parent' => $wcatTerm->term_id,
+           'taxonomy' => 'product_cat'
+         );
+          $wsubcats = get_categories($wsubargs);
+          foreach ($wsubcats as $wsc):
+            ?>
+            <p><a href="<?php echo get_term_link( $wsc->slug, $wsc->taxonomy );?>"><?php echo $wsc->name;?></a></p>
 
-              <?php 
-              foreach ($product_chield as $product_chields) {
-                ?>
-                <p><a href="#"><?php echo $product_chields->name; ?></a></p>
-                <?php
 
-                
-              }
-              ?>
-              
-              <a href="<?php echo get_term_link( $product_category ) ?>"><p>See all courses</p></a>
+            <?php
+          endforeach;
+          ?>  
 
-            </div>
-          </div>
+
+          <a href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy ); ?>"><p>See all courses</p></a>
+
         </div>
-        <?php
-
-      }
-    }
-    ?>
-    <!-- end -->
-  </div>
+      </div>
+    </div>
+    <?php 
+  endforeach; 
+  ?>
+  <!-- end -->
+</div>
 </div>
 </section>

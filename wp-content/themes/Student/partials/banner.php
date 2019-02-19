@@ -24,7 +24,7 @@
               <div class="text">
                 <h1 class="animated wow fadeInUp"><?php the_field( 'name' ); ?></h1>
                 <div class="btn">
-                  <a class="slide button" href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> Add list</a>
+                  <a class="slide button" href="<?php the_permalink(); ?>"> Add list</a>
                 </div>
               </div>
             </div>
