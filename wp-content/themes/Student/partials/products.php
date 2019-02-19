@@ -25,7 +25,7 @@
                         <p><?php echo excerpt('5'); ?></p>
                         <div class="buy">
                           <p><?php echo $product->get_price_html(); ?></p>
-                          <a href="#"> <img class="icono-add" src="assets/img/add.png"
+                          <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
                             alt="" /></a>
                           </div>
                         </div>
@@ -56,7 +56,7 @@
                         <p><?php echo excerpt('5'); ?></p>
                         <div class="buy">
                           <p><?php echo $product->get_price_html(); ?></p>
-                          <a href="#"> <img class="icono-add" src="assets/img/add.png"
+                          <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
                             alt="" /></a>
                           </div>
                         </div>
@@ -96,7 +96,7 @@
                         <p><?php echo excerpt('5'); ?></p>
                         <div class="buy">
                           <p><?php echo $product->get_price_html(); ?></p>
-                          <a href="#"> <img class="icono-add" src="assets/img/add.png"
+                          <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
                             alt="" /></a>
                           </div>
                         </div>
@@ -126,7 +126,7 @@
                       <p><?php echo excerpt('5'); ?></p>
                       <div class="buy">
                         <p><?php echo $product->get_price_html(); ?></p>
-                        <a href="#"> <img class="icono-add" src="assets/img/add.png"
+                        <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
                           alt="" /></a>
                         </div>
                       </div>

@@ -1,0 +1,12 @@
+2019-02-19T15:53:18+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /var/www/html/student/wp-content/themes/Student/woocommerce/content-single-product.php on line 24
+
+2019-02-19T16:24:42+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/student/wp-content/themes/Student/woocommerce/content-single-product.php on line 150
+
+2019-02-19T16:25:12+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/student/wp-content/themes/Student/woocommerce/content-single-product.php on line 147
+
+2019-02-19T16:37:56+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/student/wp-content/themes/Student/woocommerce/content-single-product.php on line 139
+
+2019-02-19T16:38:08+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/student/wp-content/themes/Student/woocommerce/content-single-product.php on line 139
+
+2019-02-19T16:40:11+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/student/wp-content/themes/Student/woocommerce/content-single-product.php on line 138
+

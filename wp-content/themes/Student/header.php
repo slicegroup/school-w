@@ -20,6 +20,8 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/school.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/list.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/product.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
 
 
@@ -43,12 +45,12 @@
             </div>
             <div class="content-nav">
                 <div class="logo">
-                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+                 <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
 
-               </div>
-               &nbsp;
-           </div>
-           <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
+             </div>
+             &nbsp;
+         </div>
+         <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
             <p><?php echo WC()->cart->get_cart_contents_count(); ?></p>
         </div>
@@ -112,6 +114,6 @@
     </div>
             <!-- <section id="home">
 							<div id="box-main">
-                         </section> -->
-                     </div>
-                 </header>
+                           </section> -->
+                       </div>
+                   </header>
