@@ -60,7 +60,26 @@ $('.product-popular').slick({
     // instead of a settings object
   ]
 });
+// PRODUCT SHOW SLIDER
 
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+	 autoplay: false
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+
+});
+		
 
  // Header scroll class
  $(window).scroll(function() {

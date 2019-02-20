@@ -47,4 +47,10 @@ $(document).on('click', '.minus',  // replace '.quantity' with document (without
 <?php
   }
 }
-add_action( 'wp_footer', 'jh_add_script_to_footer' );
+add_action( 'wp_footer', 'jh_add_script_to_footer' ); 
+
+
+function my_theme_setup() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'my_theme_setup' );
