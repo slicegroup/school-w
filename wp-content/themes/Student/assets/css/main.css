@@ -180,6 +180,7 @@ footer img {
 .nav-main .icon-nav {
   width: 30px;
   margin: 40px 0;
+      display: -webkit-box;
 }
 
 /* buscador */
@@ -332,6 +333,7 @@ footer img {
   transition: all 0.3s ease 0s;
   border-radius: 5px;
   text-align: center;
+  height: 330px;
 }
 
 .product .img-product img {
