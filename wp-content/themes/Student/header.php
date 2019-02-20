@@ -41,22 +41,17 @@
         <div class="firt-nav">
             <!-- <div class="line"></div> -->
             <div class="content-nav icon-nav">
-            <?php get_search_form (); ?>
-                <form>
-                    <!-- <div class="search-wrapper">
-                        <input class="search-input" type="text" placeholder="Search" /><i class="fas fa-search"></i>
-                    </div> -->
-                </form>
+                <?php get_search_form (); ?>
             </div>
 
             <div class="content-nav">
                 <div class="logo">
-                 <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
 
-             </div>
-             &nbsp;
-         </div>
-         <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
+               </div>
+               &nbsp;
+           </div>
+           <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
             <p><?php echo WC()->cart->get_cart_contents_count(); ?></p>
         </div>
@@ -83,7 +78,7 @@
                     <a class="nav-link bajar" href="#product">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link bajar" href="#footer">Contact</a>
@@ -99,7 +94,7 @@
                         <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#product">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php bloginfo('url') ?>/about.html">About</a>
+                        <a class="nav-link" href="<?php bloginfo('url') ?>/about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#footer">Contact</a>
@@ -139,6 +134,6 @@
     </div>
             <!-- <section id="home">
 							<div id="box-main">
-                           </section> -->
-                       </div>
-                   </header>
+                         </section> -->
+                     </div>
+                 </header>
