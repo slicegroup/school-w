@@ -1,304 +1,145 @@
-<section id="categories" class="category-show container">
-  <div class="row">
-    <div class="col-md-12 col-lg-6 col-xs-12 animated wow fadeInUp " data-wow-duration="1s" data-wow-delay=".2s">
-      <div class=" category-content">
-        <div>
-          <h3>School supplies</h3>
-        </div>
-        <div class="category">
-          <div class="row">
-            <div class="col-md-12 col-xs-12">
-              <div class="row">
-                <div class="col-md-6 col-xs-12 col-lg-6">
-                  <div class="body">
-                    <div class="content-show">
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-4.jpg" />
+   <!-- seccion proucts -->
+   <section id="categories" class="category-show container">
+    <div class="row">
+      <div class="col-md-12 col-lg-6 col-xs-12 animated wow fadeInUp " data-wow-duration="1s" data-wow-delay=".2s">
+        <div class=" category-content">
+          <div>
+            <h3>School supplies</h3>
+          </div>
+          <div class="category">
+            <div class="row">
+              <div class="col-md-12 col-xs-12">
+                <div class="row">
+                 <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4 ); ?>
+                 <?php $loop = new WP_Query( $args ); ?>
+
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?> 
+                  <div class="col-md-6 col-xs-12">
+                    <div class="body">
+                      <div class="content-show">
+                       <?php if ( get_field( 'image') ) { ?>
+                        <img src="<?php the_field( 'image' ); ?>" />
+                      <?php } ?>
                       <div class="text">
-                        <span>bag black</span>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <span><?php the_title(); ?></span>
+                        <p><?php echo excerpt('5'); ?></p>
                         <div class="buy">
-                          <p>$50.00</p>
-                          <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
+                          <p><?php echo $product->get_price_html(); ?></p>
+                          <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
                             alt="" /></a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                <?php endwhile; ?>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <div class="row">
+
+                <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4, 'offset' => 4 ); ?>
+                <?php $loop = new WP_Query( $args ); ?>
+
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?> 
                   <div class="col-md-6 col-xs-12">
                     <div class="body">
                       <div class="content-show">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-3.jpg" />
-                        <div class="text">
-                          <span>bag black</span>
-                          <p>Lorem ipsum dolor sit amet.</p>
-                          <div class="buy">
-                            <p>$50.00</p>
-                            <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                              alt="" /></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                      <div class="body">
-                        <div class="content-show">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-2.jpg" />
-                          <div class="text">
-                            <span>bag black</span>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <div class="buy">
-                              <p>$50.00</p>
-                              <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                alt="" /></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-xs-12">
-                        <div class="body">
-                          <div class="content-show">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso.jpg" />
-                            <div class="text">
-                              <span>bag black</span>
-                              <p>Lorem ipsum dolor sit amet.</p>
-                              <div class="buy">
-                                <p>$50.00</p>
-                                <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                  alt="" /></a>
-                                </div>
-                              </div>
-                            </div>
+                       <?php if ( get_field( 'image') ) { ?>
+                        <img src="<?php the_field( 'image' ); ?>" />
+                      <?php } ?>
+                      <div class="text">
+                        <span><?php the_title(); ?></span>
+                        <p><?php echo excerpt('5'); ?></p>
+                        <div class="buy">
+                          <p><?php echo $product->get_price_html(); ?></p>
+                          <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
+                            alt="" /></a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="body">
-                            <div class="content-show">
-                              <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-4.jpg" />
-                              <div class="text">
-                                <span>bag black</span>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <div class="buy">
-                                  <p>$50.00</p>
-                                  <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                    alt="" /></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-xs-12">
-                            <div class="body">
-                              <div class="content-show">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-3.jpg" />
-                                <div class="text">
-                                  <span>bag black</span>
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                  <div class="buy">
-                                    <p>$50.00</p>
-                                    <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                      alt="" /></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12">
-                              <div class="body">
-                                <div class="content-show">
-                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-2.jpg" />
-                                  <div class="text">
-                                    <span>bag black</span>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <div class="buy">
-                                      <p>$50.00</p>
-                                      <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                        alt="" /></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-xs-12">
-                                <div class="body">
-                                  <div class="content-show">
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso.jpg" />
-                                    <div class="text">
-                                      <span>bag black</span>
-                                      <p>Lorem ipsum dolor sit amet.</p>
-                                      <div class="buy">
-                                        <p>$50.00</p>
-                                        <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                          alt="" /></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                <?php endwhile; ?>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-6 col-xs-12 animated wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+      <div class=" category-content">
+        <div>
+          <h3>Bag</h3>
+        </div>
+        <div class="category">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+
+                <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4 ); ?>
+                <?php $loop = new WP_Query( $args ); ?>
+
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?> 
+                  <div class="col-md-6 col-xs-12">
+                    <div class="body">
+                      <div class="content-show">
+                       <?php if ( get_field( 'image') ) { ?>
+                        <img src="<?php the_field( 'image' ); ?>" />
+                      <?php } ?>
+                      <div class="text">
+                        <span><?php the_title(); ?></span>
+                        <p><?php echo excerpt('5'); ?></p>
+                        <div class="buy">
+                          <p><?php echo $product->get_price_html(); ?></p>
+                          <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
+                            alt="" /></a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-12 col-lg-6 col-xs-12 animated wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                      <div class=" category-content">
-                        <div>
-                          <h3>Bag</h3>
-                        </div>
-                        <div class="category">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="body">
-                                    <div class="content-show">
-                                      <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-4.jpg" />
-                                      <div class="text">
-                                        <span>bag black</span>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                        <div class="buy">
-                                          <p>$50.00</p>
-                                          <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                            alt="" /></a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="body">
-                                      <div class="content-show">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-3.jpg" />
-                                        <div class="text">
-                                          <span>bag black</span>
-                                          <p>Lorem ipsum dolor sit amet.</p>
-                                          <div class="buy">
-                                            <p>$50.00</p>
-                                            <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                              alt="" /></a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="body">
-                                        <div class="content-show">
-                                          <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-2.jpg" />
-                                          <div class="text">
-                                            <span>bag black</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                            <div class="buy">
-                                              <p>$50.00</p>
-                                              <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                                alt="" /></a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="body">
-                                          <div class="content-show">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso.jpg" />
-                                            <div class="text">
-                                              <span>bag black</span>
-                                              <p>Lorem ipsum dolor sit amet.</p>
-                                              <div class="buy">
-                                                <p>$50.00</p>
-                                                <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                                  alt="" /></a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                          <div class="body">
-                                            <div class="content-show">
-                                              <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-4.jpg" />
-                                              <div class="text">
-                                                <span>bag black</span>
-                                                <p>Lorem ipsum dolor sit amet.</p>
-                                                <div class="buy">
-                                                  <p>$50.00</p>
-                                                  <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                                    alt="" /></a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                            <div class="body">
-                                              <div class="content-show">
-                                                <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-3.jpg" />
-                                                <div class="text">
-                                                  <span>bag black</span>
-                                                  <p>Lorem ipsum dolor sit amet.</p>
-                                                  <div class="buy">
-                                                    <p>$50.00</p>
-                                                    <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                                      alt="" /></a>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                              <div class="body">
-                                                <div class="content-show">
-                                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso-2.jpg" />
-                                                  <div class="text">
-                                                    <span>bag black</span>
-                                                    <p>Lorem ipsum dolor sit amet.</p>
-                                                    <div class="buy">
-                                                      <p>$50.00</p>
-                                                      <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                                        alt="" /></a>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-md-6">
-                                                <div class="body">
-                                                  <div class="content-show">
-                                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/bolso.jpg" />
-                                                    <div class="text">
-                                                      <span>bag black</span>
-                                                      <p>Lorem ipsum dolor sit amet.</p>
-                                                      <div class="buy">
-                                                        <p>$50.00</p>
-                                                        <a href="#"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
-                                                          alt="" /></a>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
+                  </div>
+                <?php endwhile; ?>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
 
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </section>
+               <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4, 'offset' => 4 ); ?>
+               <?php $loop = new WP_Query( $args ); ?>
+
+               <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?> 
+                <div class="col-md-6 col-xs-12">
+                  <div class="body">
+                    <div class="content-show">
+                     <?php if ( get_field( 'image') ) { ?>
+                      <img src="<?php the_field( 'image' ); ?>" />
+                    <?php } ?>
+                    <div class="text">
+                      <span><?php the_title(); ?></span>
+                      <p><?php echo excerpt('5'); ?></p>
+                      <div class="buy">
+                        <p><?php echo $product->get_price_html(); ?></p>
+                        <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
+                          alt="" /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>

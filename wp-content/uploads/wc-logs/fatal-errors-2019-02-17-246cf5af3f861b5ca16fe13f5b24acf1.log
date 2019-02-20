@@ -1,0 +1,96 @@
+2019-02-17T16:43:06+00:00 CRITICAL Uncaught Error: Call to undefined function excerpt() in /var/www/html/student/wp-content/themes/Student/partials/products.php:27
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 27
+
+2019-02-17T16:44:39+00:00 CRITICAL Uncaught Error: Call to undefined function excerpt() in /var/www/html/student/wp-content/themes/Student/partials/products.php:27
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 27
+
+2019-02-17T16:44:45+00:00 CRITICAL Uncaught Error: Call to undefined function excerpt() in /var/www/html/student/wp-content/themes/Student/partials/products.php:27
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 27
+
+2019-02-17T16:45:34+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/student/wp-content/themes/Student/partials/products.php:29
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 29
+
+2019-02-17T16:45:36+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/student/wp-content/themes/Student/partials/products.php:29
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 29
+
+2019-02-17T16:45:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/student/wp-content/themes/Student/partials/products.php:29
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 29
+
+2019-02-17T16:45:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/student/wp-content/themes/Student/partials/products.php:29
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 29
+
+2019-02-17T16:45:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/student/wp-content/themes/Student/partials/products.php:29
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(8): get_template_part('partials/produc...')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/products.php on line 29
+

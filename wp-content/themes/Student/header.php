@@ -20,6 +20,8 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/school.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/list.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/product.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/woocomerce-style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/product-show.css">
@@ -44,42 +46,48 @@
                     </div>
                 </form>
             </div>
+
             <div class="content-nav">
                 <div class="logo">
-                 <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
-             </div>
-             &nbsp;
-         </div>
-         <div class="content-nav icon-nav">
+                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+
+               </div>
+               &nbsp;
+           </div>
+           <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
+            <p><?php echo WC()->cart->get_cart_contents_count(); ?></p>
         </div>
+
+    </a>
+</div>
+<?php get_search_form (); ?>
+<nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
+    <div id="menu" class="mx-auto d-sm-flex d-block flex-sm-nowrap menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+        <ul id="mainNav" class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link bajar" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bajar" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bajar" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bajar" href="#footer">Contact</a>
+            </li>
+        </ul>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
-        <div id="menu" class="mx-auto d-sm-flex d-block flex-sm-nowrap menu">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-            <ul id="mainNav" class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link bajar" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bajar" href="#categories">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bajar" href="#product">Product</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bajar" href="#footer">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+</div>
 </nav>
 
 

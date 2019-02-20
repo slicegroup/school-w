@@ -9,7 +9,7 @@ $('.slider').slick({
   infinite: true,
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
   // touchThreshold: 100
- 
+  
 });
 
 // slider productos
@@ -30,31 +30,31 @@ $('.product-popular').slick({
   autoplay: false,
   autoplaySpeed: 2000,
   arrows: true,
-   dots: true,
+  dots: true,
   responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
     }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
@@ -118,8 +118,8 @@ var $menu = document.getElementById('menu_xs');
 var $squeeze = document.getElementById('squeeze');
 // var $hamburger = document.querySelectorAll(".hamburger");
 function toggleMenu(){
-    $menu.classList.toggle('active');
-    $squeeze.classList.toggle('is-active');
+  $menu.classList.toggle('active');
+  $squeeze.classList.toggle('is-active');
 };
 $burguer.addEventListener('click',toggleMenu);
 
@@ -234,3 +234,32 @@ $(document).ready(function(){
 });
 
 
+
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+  autoplay: false,
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+
+});
+
+// slider relacionado
+$(document).ready(function(){
+  $('.relacionados').slick({
+    slidesToShow: 3,
+    dots:true,
+    centerMode: true,
+  // autoplay:true,
+});
+});
