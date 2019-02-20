@@ -96,3 +96,26 @@
   font-weight: 700;
   padding: 30px 12px!important;
 }
+.woocommerce-message {
+  display: none!important
+}
+.woocommerce-info {
+  display: none;
+}
+.woocommerce-breadcrumb{
+  margin-top: 200px;
+}
+.site-main{
+  margin: 190px;
+}
+ .woocommerce-loop-product__link img{
+  width: 150px!important;
+  height: 150px!important;
+}
+.columns-3{
+  display: inline-flex;
+}
+.product{
+  height: 330px;
+  width: 258px;
+}

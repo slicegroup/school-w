@@ -7,7 +7,7 @@
 
 get_header(); ?>
 	<style>.right-sidebar .content-area {width: 100%;float: none;margin-right: 0;}</style>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
 
 			<?php content_product_adder() ?>
