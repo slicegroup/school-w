@@ -180,6 +180,7 @@ footer img {
 .nav-main .icon-nav {
   width: 30px;
   margin: 40px 0;
+  display: -webkit-box;
 }
 
 /* buscador */
