@@ -36,6 +36,7 @@
 
 
 <body>
+    <?php $current_file = basename($_SERVER['PHP_SELF'])."/product";?>
     <header id="header" class="nav-main">
         <div class="firt-nav">
             <!-- <div class="line"></div> -->
@@ -49,12 +50,12 @@
 
             <div class="content-nav">
                 <div class="logo">
-                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+                 <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
 
-               </div>
-               &nbsp;
-           </div>
-           <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
+             </div>
+             &nbsp;
+         </div>
+         <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
             <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
             <p><?php echo WC()->cart->get_cart_contents_count(); ?></p>
         </div>
@@ -70,24 +71,42 @@
     </button>
     <div class="collapse navbar-collapse text-center" id="navbarsExample11">
         <ul id="mainNav" class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link bajar" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bajar" href="#categories">Categories</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bajar" href="#product">Product</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bajar" href="#footer">Contact</a>
-            </li>
-        </ul>
+            <?php if ($current_file == 'index.php'): ?>
+                <li class="nav-item active">
+                    <a class="nav-link bajar" href="<?php bloginfo('url') ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bajar" href="#categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bajar" href="#product">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bajar" href="#footer">Contact</a>
+                </li>
+                <?php else: ?>
+                    <li class="nav-item active">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php bloginfo('url') ?>/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#footer">Contact</a>
+                    </li>
+                <?php endif; ?>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
 
@@ -119,6 +138,6 @@
     </div>
             <!-- <section id="home">
 							<div id="box-main">
-                         </section> -->
-                     </div>
-                 </header>
+                           </section> -->
+                       </div>
+                   </header>

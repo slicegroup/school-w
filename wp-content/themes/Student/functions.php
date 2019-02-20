@@ -70,3 +70,24 @@ function actualizar_minicarro_ajax( $fragments ) {
 
 }
 /*****************funcion para actualizar el contador de producto*****************/
+
+/**
+ * Cambio de textos en WooCommerce/WordPress
+ *
+ * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/gettext
+ */
+function my_text_strings( $translated_text, $text, $domain ) {
+	switch ( $translated_text ) {
+		case 'Categories' :
+		$translated_text = __( 'School', 'woocommerce' );
+		break;
+		case 'Añadir al carrito' :
+		$translated_text = __( 'Añadir a la cesta', 'woocommerce' );
+		break;
+		case 'Productos relacionados' :
+		$translated_text = __( 'Quizás te interesen estos fantásticos productos', 'woocommerce' );
+		break;
+	}
+	return $translated_text;
+}
+add_filter( 'gettext', 'my_text_strings', 20, 3 );

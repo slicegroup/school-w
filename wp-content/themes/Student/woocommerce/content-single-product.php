@@ -1,12 +1,10 @@
 <?php global $product;?>
 <?php $post_thumbnail_id = get_post_thumbnail_id();
 $url = wp_get_attachment_url( $post_thumbnail_id);
-$galleries = get_post_galleries_images( $post );
 
 ?>
 
 
-<!-- product show-->
 <section class="container" style="margin-top:200px">
 	<div class="row ">
 		<div class="col-md-6">
