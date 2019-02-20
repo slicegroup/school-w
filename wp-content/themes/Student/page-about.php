@@ -20,7 +20,7 @@
   </div>
 </section>
 
-
+<?php  get_template_part('partials/contact'); ?>
  <!-- seccion school -->
  <?php  get_template_part('partials/school'); ?>
 
