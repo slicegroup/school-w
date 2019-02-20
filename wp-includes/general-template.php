@@ -214,7 +214,7 @@ function get_search_form( $echo = true ) {
 					<span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
 					<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" /><i class="fas fa-search"></i>
 				</label>
-				<input type="submit" class="search-submit" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
+	
 			</form>
 			</div>';
 		} else {
@@ -224,7 +224,7 @@ function get_search_form( $echo = true ) {
 				<div>
 					<label class="screen-reader-text" for="s">' . _x( 'Search for:', 'label' ) . '</label>
 					<input class="search-input" type="text" value="' . get_search_query() . '" name="s" id="s" /><i class="fas fa-search"></i>
-					<input class="search-input" type="submit" id="searchsubmit" value="'. esc_attr_x( 'Search', 'submit button' ) .'" />
+		
 				</div>
 			</form>
 			</div>';

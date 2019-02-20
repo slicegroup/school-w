@@ -40,6 +40,7 @@
         <div class="firt-nav">
             <!-- <div class="line"></div> -->
             <div class="content-nav icon-nav">
+            <?php get_search_form (); ?>
                 <form>
                     <!-- <div class="search-wrapper">
                         <input class="search-input" type="text" placeholder="Search" /><i class="fas fa-search"></i>
@@ -61,7 +62,7 @@
 
     </a>
 </div>
-<?php get_search_form (); ?>
+
 <nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
     <div id="menu" class="mx-auto d-sm-flex d-block flex-sm-nowrap menu">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
