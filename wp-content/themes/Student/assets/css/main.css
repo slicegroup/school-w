@@ -884,7 +884,8 @@ footer img {
 .search-wrapper input {
   background: transparent;
   border: 0;
-  color: white;
+  color: #0e57a4;
+  font-size: 0.8rem;
   outline: none;
   height: 40px;
   width: 0;

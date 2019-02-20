@@ -41,9 +41,9 @@
             <!-- <div class="line"></div> -->
             <div class="content-nav icon-nav">
                 <form>
-                    <div class="search-wrapper">
+                    <!-- <div class="search-wrapper">
                         <input class="search-input" type="text" placeholder="Search" /><i class="fas fa-search"></i>
-                    </div>
+                    </div> -->
                 </form>
             </div>
 
