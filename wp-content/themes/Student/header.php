@@ -54,11 +54,7 @@
            <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
                <p style="font-size: 1.2rem;"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
                <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
-               <<<<<<< HEAD
-
-               =======
                
-               >>>>>>> staging
            </div>
 
        </a>
