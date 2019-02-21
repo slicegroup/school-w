@@ -1,0 +1,8 @@
+2019-02-21T18:22:53+00:00 CRITICAL syntax error, unexpected '<' in /var/www/html/student/wp-content/themes/Student/page-school.php on line 51
+
+2019-02-21T18:23:06+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/student/wp-content/themes/Student/page-school.php on line 52
+
+2019-02-21T18:23:19+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/student/wp-content/themes/Student/page-school.php on line 52
+
+2019-02-21T18:28:40+00:00 CRITICAL syntax error, unexpected '=', expecting ')' in /var/www/html/student/wp-content/themes/Student/page-school.php on line 48
+

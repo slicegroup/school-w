@@ -24,17 +24,56 @@
          </div>
          <div class="content">
           <h3><?php echo $wcatTerm->name; ?></h3>
-          <a href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy ); ?>"><p>See all courses</p></a>
+          <?php
+          $wsubargs = array(
+            'hierarchical' => 1,
+            'show_option_none' => '',
+            'hide_empty' => 1,
+            'parent' => $wcatTerm->term_id,
+            'taxonomy' => 'product_cat',
+            'posts_per_page' => 2
+          );
+          $wsubcats = get_categories($wsubargs);
+          foreach ($wsubcats as $wsc):
+            ?>
 
-        </div>
-      </div>
-    </div>
-    <?php 
-  endforeach; 
-  ?>
-  <!-- end -->
+            <?php 
+            $wsubarg = array(
+              'hierarchical' => 1,
+              'show_option_none' => '',
+              'hide_empty' => 0,
+              'parent' => $wsc->term_id,
+              'taxonomy' => 'product_cat'
+              
+            );
+
+            $subcat = get_categories($wsubarg);
+
+            foreach($subcat as $sub) : ?>
+
+              <p><a href="<?php echo get_term_link( $sub->slug, $sub->taxonomy );?>"><?php echo $sub->name;?></a></p>
+
+
+              <?php
+            endforeach;
+            ?>  
+            <?php 
+          endforeach; 
+          ?>
+
+          <a href="<?php echo bloginfo('url');?>/school/#<?php echo $wcatTerm->slug; ?>"><p>See all courses</p></a>
+         <!--  <a href="<?php echo get_term_link( $wcatTerm->slug, $wcatTerm->taxonomy ); ?>"><p>See all courses</p></a>
+         -->
+       </div>
+     </div>
+   </div>
+   <?php 
+ endforeach; 
+ ?>
+ <!-- end -->
 </div>
-</div>
+</div> 
+
 </section>
 
 
