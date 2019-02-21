@@ -263,3 +263,10 @@ $(document).ready(function(){
   // autoplay:true,
 });
 });
+
+// button add_cart
+// button product_type_simple add_to_cart_button ajax_add_to_cart added            
+
+$('.product_type_simple').click(function(){
+  $(this).closest('.add_to_cart_button').addClass('none');
+});

@@ -1,6 +1,6 @@
  <section id="product" class="product container">
   <div class="wrapper">
-    <h2>Popular products</h2>
+    <h2 class="pro_title">Popular products</h2>
     <div class="product-popular">
       <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 6 ); ?>
       <?php $loop = new WP_Query( $args ); ?>
