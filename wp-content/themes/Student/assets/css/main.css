@@ -1173,3 +1173,9 @@ section#home {
 .about-img {
   height: 90vh!important;
 }
+#show{
+  margin: 200px !important;
+}
+#show .body{
+  height: 300px;
+}
