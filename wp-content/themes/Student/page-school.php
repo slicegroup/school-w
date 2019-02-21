@@ -45,27 +45,24 @@ foreach($wcatTerms as $wcatTerm) :
 							<div class="list-content">
 								<ul class="list-group list-group-flush">
 									
-									<?php $subcat = get_terms('product_cat', array('hide_empty' => 0, 'child' =>0)); 
-									foreach($subcat as $sub) : 
-										?>
-										<?php
-										$wsubarg = array(
-											'hierarchical' => 1,
-											'show_option_none' => '',
-											'hide_empty' => 1,
-											'parent' => $sub->term_id,
-											'taxonomy' => 'product_cat',
-											'posts_per_page' => 2
-										);
-										$wsubcat = get_categories($wsubarg);
-										foreach ($wsubcat as $wscb):
-											?>
-											<li class="list-group-item  d-flex justify-content-between align-items-center"><?php echo $wscb->name;?>
-											<a href="<?php echo get_term_link( $sub->slug, $wscb->taxonomy );?>" class="slide button"> See list</a>
-										</li>
-										<?php
-									endforeach;
-									?>
+									<?php 
+									$wsubarg = array(
+										'hierarchical' => 1,
+										'show_option_none' => '',
+										'hide_empty' => 0,
+										'parent' => $wsc->term_id,
+										'taxonomy' => 'product_cat'
+										
+									);
+
+									$subcat = get_categories($wsubarg);
+
+									foreach($subcat as $sub) : ?>
+										
+										<li class="list-group-item  d-flex justify-content-between align-items-center"><?php echo $sub->name;?>
+										<a href="<?php echo get_term_link( $sub->slug, $sub->taxonomy );?>" class="slide button"> See list</a>
+									</li>
+									
 									<?php
 								endforeach;
 								?>  
