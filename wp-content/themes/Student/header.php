@@ -46,21 +46,21 @@
 
             <div class="content-nav">
                 <div class="logo">
-                 <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
 
-             </div>
-             &nbsp;
-         </div>
-         <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
-             <p style="font-size: 1.2rem;"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
-             <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
+               </div>
+               &nbsp;
+           </div>
+           <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
+               <p style="font-size: 1.2rem;"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
+               <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
 
-         </div>
+           </div>
 
-     </a>
- </div>
+       </a>
+   </div>
 
- <nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
+   <nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
     <div id="menu" class="mx-auto d-sm-flex d-block flex-sm-nowrap menu">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -135,6 +135,6 @@
     </div>
             <!-- <section id="home">
 							<div id="box-main">
-                           </section> -->
-                       </div>
-                   </header>
+                         </section> -->
+                     </div>
+                 </header>
