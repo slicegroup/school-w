@@ -10,7 +10,7 @@
             <div class="row">
               <div class="col-md-12 col-xs-12">
                 <div class="row">
-                 <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4 ); ?>
+                 <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4, 'tag=note' ); ?>
                  <?php $loop = new WP_Query( $args ); ?>
 
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?> 

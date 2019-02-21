@@ -30,26 +30,11 @@
         </button>
       </div>
       <div class="modal-body">
-      <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nombre</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-       
-          </form>
-              </div>
-      <div class="modal-footer">
+       <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 8, 'title' => false, 'description' => false ) ); ?>
+     </div>
+     <div class="modal-footer">
       <a class="slide button"  data-toggle="modal" data-target="#exampleModalCenter">send</a>
-      </div>
     </div>
   </div>
+</div>
 </div>

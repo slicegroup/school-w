@@ -27,7 +27,7 @@
           $wsubargs = array(
            'hierarchical' => 1,
            'show_option_none' => '',
-           'hide_empty' => 0,
+           'hide_empty' => 1,
            'parent' => $wcatTerm->term_id,
            'taxonomy' => 'product_cat'
          );
