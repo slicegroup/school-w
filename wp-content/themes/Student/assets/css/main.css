@@ -1173,3 +1173,9 @@ section#home {
 .about-img {
   height: 90vh!important;
 }
+.cat h2{
+  margin: 0 0 60px!important;
+}
+.cat h2:before {
+  top: 50px;
+}
