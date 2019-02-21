@@ -52,15 +52,15 @@
                &nbsp;
            </div>
            <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
-           <p style="font-size: 1.2rem;"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
-          
-        </div>
+               <p style="font-size: 1.2rem;"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
+               <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
+               
+           </div>
 
-    </a>
-</div>
+       </a>
+   </div>
 
-<nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
+   <nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
     <div id="menu" class="mx-auto d-sm-flex d-block flex-sm-nowrap menu">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +76,7 @@
                     <a class="nav-link bajar" href="#categories">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link bajar" href="#product">Product</a>
+                    <a class="nav-link bajar" href="<?php bloginfo('url') ?>/show">Product</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about">About</a>
@@ -92,7 +92,7 @@
                         <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#categories">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#product">Product</a>
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/show">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php bloginfo('url') ?>/about">About</a>

@@ -4,8 +4,8 @@
 <?php $wcatTerms = get_terms('product_cat', array('hide_empty' => 0, 'parent' =>0)); 
 foreach($wcatTerms as $wcatTerm) : 
 	?>
-	<section id="<?php echo $wcatTerm->slug; ?>" class="container">
-		<div class="titulo-curso">
+	<section id="<?php echo $wcatTerm->slug; ?>" class="container" >
+		<div class="titulo-curso" style="    margin: 200px 0;">
 			<div>
 				<?php $thumbnail_id = get_woocommerce_term_meta($wcatTerm->term_id, 'thumbnail_id', true);
 

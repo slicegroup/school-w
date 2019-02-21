@@ -1174,9 +1174,9 @@ section#home {
 .about-img {
   height: 90vh!important;
 }
-.cat h2{
-  margin: 0 0 60px!important;
+#show{
+  margin: 200px !important;
 }
-.cat h2:before {
-  top: 50px;
+#show .body{
+  height: 300px;
 }
