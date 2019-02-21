@@ -274,8 +274,7 @@ footer img {
 .product .product-popular .slick-next {
   right: -50px;
 }
-
-.product h2:before {
+.pro_title:before {
   position: absolute;
   top: 120px;
   content: "";
@@ -783,14 +782,16 @@ footer img {
   border-color: var(--hover);
   color: #000;
 }
-
+.none{
+  display: none;
+}
 .button {
   background: #f5f70d!important;
   border: none;
-  padding: 16px 40px;
+  padding:  14px 38px;
   border-radius: 5px;
   margin-top: 30px;
-  font-size: .9rem;
+  font-size: .8rem;
   cursor: pointer;
   color: #000 !important;
 }
