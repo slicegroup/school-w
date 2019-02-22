@@ -1,5 +1,12 @@
 @media (min-width: 0px) and (max-width: 767px) {
-
+    .firt-nav{
+        display: none!important;
+    }
+    #main_xs{
+        background: red;
+    width: 100%;
+    height: 100px;
+    }
     /* banner */
     .banner h1 {
         font-size: 2rem;
@@ -19,18 +26,13 @@
     .icon-nav {
         display: none!important;
     }
-    .nav-main .logo {
-      text-align: start;
-    }
+ 
     #categories {
         padding-top: 0px;
     }
     .banner .img {
       margin-top: 80px;
     }
-    .nav-main .firt-nav {
-      border-bottom: none;
-  }
   .banner .mask {
     top: 80px;
   }
@@ -51,6 +53,7 @@
     .slick-next {
         display: none !important;
     }
+    
 }
 
 /* 768-577 tablet */
