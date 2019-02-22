@@ -91,3 +91,65 @@ function my_text_strings( $translated_text, $text, $domain ) {
 	return $translated_text;
 }
 add_filter( 'gettext', 'my_text_strings', 20, 3 );
+
+
+/******************Carrusel*****************/
+function carrusel_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Carrusel', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Carrusel', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Carrusel', 'text_domain' ),
+		'name_admin_bar'        => __( 'Carrusel', 'text_domain' ),
+		'archives'              => __( 'Archivos del artículo', 'text_domain' ),
+		'attributes'            => __( 'Atributos del artículo', 'text_domain' ),
+		'parent_item_colon'     => __( 'Artículo principal:', 'text_domain' ),
+		'all_items'             => __( 'Todos los artículos', 'text_domain' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'text_domain' ),
+		'add_new'               => __( 'Añadir nuevo', 'text_domain' ),
+		'new_item'              => __( 'Nuevo artículo', 'text_domain' ),
+		'edit_item'             => __( 'Editar elemento', 'text_domain' ),
+		'update_item'           => __( 'Elemento de actualización', 'text_domain' ),
+		'view_item'             => __( 'Ver ítem', 'text_domain' ),
+		'view_items'            => __( 'Ver artículos', 'text_domain' ),
+		'search_items'          => __( 'Buscar artículo', 'text_domain' ),
+		'not_found'             => __( 'Extraviado', 'text_domain' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'text_domain' ),
+		'featured_image'        => __( 'Foto principal', 'text_domain' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'text_domain' ),
+		'remove_featured_image' => __( 'Eliminar imagen destacada', 'text_domain' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'text_domain' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'text_domain' ),
+		'items_list'            => __( 'Lista de artículos', 'text_domain' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'text_domain' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'text_domain' ),
+
+	);
+	$args = array(
+		'label'                 => __( 'Carrusel', 'text_domain' ),
+		'description'           => __( 'Site carrusel.', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'taxonomies'            => array( '' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-format-gallery',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'carrusel', $args );
+
+}
+
+add_action( 'init', 'carrusel_post_type', 0 );
+
+/******************Carrusel*****************/
