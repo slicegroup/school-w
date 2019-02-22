@@ -11,9 +11,7 @@ get_header();
 					<a href="<?php the_permalink() ?>">
 						<div class="
 						img-product">
-						<?php if ( get_field( 'image') ) { ?>
-							<img src="<?php the_field( 'image' ); ?>" />
-						<?php } ?>
+						<?php the_post_thumbnail('thumbnail'); ?>
 					</div>
 					<div class="text-product">
 						<span><?php the_title(); ?></span>
