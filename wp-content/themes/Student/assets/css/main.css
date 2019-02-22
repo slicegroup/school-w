@@ -83,7 +83,12 @@ footer .info {
 footer img {
   margin: 0 10px;
 }
-
+.logo-slice{
+  display: inline-block;
+}
+.logo-slice img{
+  width: 50px;
+}
 #header {
   position: fixed;
   left: 0;
