@@ -54,12 +54,9 @@
            <a href="<?Php echo HOME_URL ( ' /car ' ) ?> "><div class="content-nav icon-nav">
                <p style="font-size: 1.2rem;"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
                <img src="<?php echo get_template_directory_uri();?>/assets/img/add.png" width="25px" alt="" />&nbsp;
-               
            </div>
-
        </a>
    </div>
-
    <nav class="navbar navbar-expand-sm navbar-light header navbar-fixed-top up container " data-toggle="affix">
     <div id="menu" class="mx-auto d-sm-flex d-block flex-sm-nowrap menu">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
@@ -108,12 +105,14 @@
         </div>
     </div>
 </nav>
-
-
-
+</header>
 <!-- nav responsive -->
 <div>
     <div id="main_xs">
+    <div class="logo-responsive">
+                   <a href="<?php echo bloginfo('url');?>"> <img class="img-logo"  src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" /></a>
+
+               </div>
         <div class="button-burger" id="burguer">
             <div class="hamburger hamburger--squeeze" id="squeeze">
                 <div class="hamburger-box">
@@ -123,22 +122,51 @@
         </div>
         <nav class="menu_xs" id="menu_xs">
             <div class="frame-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Item 1</a>
+            <ul id="mainNav" class="navbar-nav">
+            <?php if ($current_file == 'index.php'): ?>
+                <li class="nav-item active">
+                    <a class="nav-link bajar" href="<?php bloginfo('url') ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bajar" href="#categories">Categories</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link bajar" href="<?php bloginfo('url') ?>/shop">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bajar" href="#footer">Contact</a>
+                </li>
+                <?php else: ?>
+                    <li class="nav-item active">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>">Home</a>
                     </li>
-                    <li>
-                        <a href="index.html">Item 2</a>
+                    <li class="nav-item">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#categories">Categories</a>
                     </li>
-                    <li>
-                        <a href="index.html">Item 3</a>
+                    <li class="nav-item">
+
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/shop">Product</a>
+
                     </li>
-                </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php bloginfo('url') ?>/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bajar" href="<?php bloginfo('url') ?>/#footer">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <!-- <div class="content-nav">
+                <?php get_search_form (); ?>
+            </div> -->
+                    </li>
+                   
+                <?php endif; ?>
+            </ul>
             </div>
         </nav>
     </div>
-            <!-- <section id="home">
-							<div id="box-main">
-                         </section> -->
-                     </div>
-                 </header>
+  </div>
