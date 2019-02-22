@@ -20,7 +20,7 @@
                        <?php the_post_thumbnail('medium'); ?>
                       <div class="text">
                         <span><?php the_title(); ?></span>
-                        <p><?php echo excerpt('5'); ?></p>
+                        <p><?php echo excerpt('3'); ?></p>
                         <div class="buy">
                           <p><?php echo $product->get_price_html(); ?></p>
                           <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
@@ -49,7 +49,7 @@
                       <?php the_post_thumbnail('medium'); ?>
                       <div class="text">
                         <span><?php the_title(); ?></span>
-                        <p><?php echo excerpt('5'); ?></p>
+                        <p><?php echo excerpt('3'); ?></p>
                         <div class="buy">
                           <p><?php echo $product->get_price_html(); ?></p>
                           <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
@@ -87,7 +87,7 @@
                       <?php the_post_thumbnail('medium'); ?>
                       <div class="text">
                         <span><?php the_title(); ?></span>
-                        <p><?php echo excerpt('5'); ?></p>
+                        <p><?php echo excerpt('3'); ?></p>
                         <div class="buy">
                           <p><?php echo $product->get_price_html(); ?></p>
                           <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"
@@ -115,7 +115,7 @@
                     <?php the_post_thumbnail('thumbnail'); ?>
                     <div class="text">
                       <span><?php the_title(); ?></span>
-                      <p><?php echo excerpt('5'); ?></p>
+                      <p><?php echo excerpt('3'); ?></p>
                       <div class="buy">
                         <p><?php echo $product->get_price_html(); ?></p>
                         <a href="<?php echo bloginfo('url');?>/?add-to-cart=<?php echo get_the_ID (); ?>"> <img class="icono-add" src="<?php echo get_template_directory_uri();?>/assets/img/add.png"

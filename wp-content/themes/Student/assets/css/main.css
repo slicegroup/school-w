@@ -39,14 +39,14 @@ section {
 footer {
   background: #000;
   color: #fff;
-  height: 160px;
+  height: 180px;
   text-align: center;
   padding: 35px;
 }
 
 footer .fab {
   background: white;
-  padding: 8px;
+  padding: 7px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -336,9 +336,9 @@ footer img {
 }
 
 .product .img-product img {
-  min-width: 190px;
-  min-height: 190px;
-  max-height: 190px;
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 100%;
 }
 
 .product .img-product {
@@ -604,8 +604,8 @@ footer img {
 }
 
 .category-show .category-content .body img {
-  width: 50%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
 }
 
 .category-show .category-content .body .content-show {

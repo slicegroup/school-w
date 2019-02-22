@@ -47,7 +47,11 @@
             <i class="fab fa-twitter"></i>
         </div>
         <div class="copy">
-            <span>Copyright © Student R US2019 | Powered by Slice Group </span>
+            <span>Copyright © Student R US2019 | Powered by Slice Group 
+            <div class="logo-slice">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/Logo_blanco.png" alt="">
+            </div>
+            </span>
         </div>
     </div>
 </footer>
