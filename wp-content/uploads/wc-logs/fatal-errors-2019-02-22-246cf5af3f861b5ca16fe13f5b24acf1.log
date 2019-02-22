@@ -1,0 +1,12 @@
+2019-02-22T14:27:00+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /var/www/html/student/wp-content/themes/Student/partials/banner.php:12
+Stack trace:
+#0 /var/www/html/student/wp-includes/template.php(690): require()
+#1 /var/www/html/student/wp-includes/template.php(647): load_template('/var/www/html/s...', false)
+#2 /var/www/html/student/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/html/student/wp-content/themes/Student/home.php(4): get_template_part('partials/banner')
+#4 /var/www/html/student/wp-includes/template-loader.php(74): include('/var/www/html/s...')
+#5 /var/www/html/student/wp-blog-header.php(19): require_once('/var/www/html/s...')
+#6 /var/www/html/student/index.php(17): require('/var/www/html/s...')
+#7 {main}
+  thrown in /var/www/html/student/wp-content/themes/Student/partials/banner.php on line 12
+
