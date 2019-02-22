@@ -14,9 +14,9 @@ $url = wp_get_attachment_url( $post_thumbnail_id);
 				<div class="slider-for">
 
 					<div class="item">
-						<?php if ( get_field( 'image') ) { ?>
-							<img src="<?php the_field( 'image' ); ?>" alt="image" draggable="false"/>
-						<?php } ?>
+						
+						<?php the_post_thumbnail('medium'); ?>
+						
 					</div>
 					<div class="item">
 						<img src="https://tottobo.vteximg.com.br/arquivos/ids/156748-1000-1000/STANDE-1510G-Z32_PRINCIPAL.png?v=636486878368200000"
@@ -96,9 +96,7 @@ $url = wp_get_attachment_url( $post_thumbnail_id);
             					<a href="<?php the_permalink() ?>">
             						<div class="
             						img-product">
-            						<?php if ( get_field( 'image') ) { ?>
-            							<img src="<?php the_field( 'image' ); ?>" />
-            						<?php } ?>
+            						<?php the_post_thumbnail('thumbnail'); ?>
             					</div>
             					<div class="text-product">
             						<span><?php the_title(); ?></span>
