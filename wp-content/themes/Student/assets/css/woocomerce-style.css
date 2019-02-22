@@ -103,7 +103,6 @@
   display: none;
 }
 .woocommerce-breadcrumb{
-  margin-top: 200px;
   font-size: .8rem;
   color: #0e57a4;
 }
@@ -112,7 +111,7 @@
   color: #0e57a4;
 }
 .site-main {
-  margin: 150px;
+  margin: 0 150px;
 }
  .woocommerce-loop-product__link img{
   width: 130px!important;

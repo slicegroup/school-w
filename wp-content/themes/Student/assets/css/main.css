@@ -1177,9 +1177,11 @@ section#home {
     align-items: center;
     box-shadow: 0px 4px 12px #00000047;
     transition: all 0.3s ease 0s;
+    z-index: 2;
 }
 .about-img {
   height: 90vh!important;
+      margin-top: 0px!important;
 }
 #show{
   margin: 200px !important;
