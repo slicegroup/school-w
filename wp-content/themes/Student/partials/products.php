@@ -104,7 +104,6 @@
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-
                <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4, 'offset' => 4 ); ?>
                <?php $loop = new WP_Query( $args ); ?>
 
