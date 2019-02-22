@@ -17,9 +17,7 @@
                   <div class="col-md-6 col-xs-12">
                     <div class="body">
                       <div class="content-show">
-                       <?php if ( get_field( 'image') ) { ?>
-                        <img src="<?php the_field( 'image' ); ?>" />
-                      <?php } ?>
+                       <?php the_post_thumbnail('medium'); ?>
                       <div class="text">
                         <span><?php the_title(); ?></span>
                         <p><?php echo excerpt('5'); ?></p>
@@ -48,9 +46,7 @@
                   <div class="col-md-6 col-xs-12">
                     <div class="body">
                       <div class="content-show">
-                       <?php if ( get_field( 'image') ) { ?>
-                        <img src="<?php the_field( 'image' ); ?>" />
-                      <?php } ?>
+                      <?php the_post_thumbnail('medium'); ?>
                       <div class="text">
                         <span><?php the_title(); ?></span>
                         <p><?php echo excerpt('5'); ?></p>
@@ -88,9 +84,7 @@
                   <div class="col-md-6 col-xs-12">
                     <div class="body">
                       <div class="content-show">
-                       <?php if ( get_field( 'image') ) { ?>
-                        <img src="<?php the_field( 'image' ); ?>" />
-                      <?php } ?>
+                      <?php the_post_thumbnail('medium'); ?>
                       <div class="text">
                         <span><?php the_title(); ?></span>
                         <p><?php echo excerpt('5'); ?></p>
@@ -118,9 +112,7 @@
                 <div class="col-md-6 col-xs-12">
                   <div class="body">
                     <div class="content-show">
-                     <?php if ( get_field( 'image') ) { ?>
-                      <img src="<?php the_field( 'image' ); ?>" />
-                    <?php } ?>
+                    <?php the_post_thumbnail('thumbnail'); ?>
                     <div class="text">
                       <span><?php the_title(); ?></span>
                       <p><?php echo excerpt('5'); ?></p>
