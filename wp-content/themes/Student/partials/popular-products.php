@@ -11,7 +11,7 @@
             <a href="<?php the_permalink() ?>">
               <div class="
               img-product">
-              <?php the_post_thumbnail('medium'); ?>
+              <?php the_post_thumbnail('thumbnail'); ?>
             </div>
             <div class="text-product">
               <span><?php the_title(); ?></span>
